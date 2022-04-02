@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pay Nikolai</title>
+    <meta name="theme-color" content="#00a532">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:image" content="/twitter.png">
+    <meta name="twitter:site" content="@Nikolai">
+    <meta name="twitter:creator" content="@Nikolai">
+    <meta property="og:url" content="https://pay.nikol.ai">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Pay Nikolai">
+    <meta property="og:image" content="/facebook.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="626">
+    <link rel="preload" as="font" type="font/woff2" href="/montserrat-400.woff2" crossorigin>
+    <link rel="preload" as="font" type="font/woff2" href="/montserrat-700.woff2" crossorigin>
+  </head>
+  <body class="mdc-typography">
+    <div class="mdc-layout-grid">
+      <p class="mdc-typography--headline6">
+        Pay Nikolai
+        <strong class="mdc-typography--headline1 amount hidden">
+          <sup><span class="us hidden">US</span>$</sup><span class="value"></span>
+        </strong>
+        with your favorite payment service:
+      </p>
+      <ul class="mdc-deprecated-list mdc-deprecated-list--icon-list">
+        <li class="mdc-deprecated-list-item">
+          <a href="https://cash.app/nikolai" class="mdc-button mdc-button--unelevated cash-app">
+            <span class="mdc-button__ripple"></span>
+            <span class="mdc-button__focus-ring"></span>
+            <span class="mdc-button__label">Pay with <b>Cash App</b></span>
+          </a>
+        </li>
+        <li class="mdc-deprecated-list-item">
+          <a href="https://venmo.com/nikolain" class="mdc-button mdc-button--unelevated venmo">
+            <span class="mdc-button__ripple"></span>
+            <span class="mdc-button__focus-ring"></span>
+            <span class="mdc-button__label">Pay with <b>Venmo</b></span>
+          </a>
+        </li>
+        <li class="mdc-deprecated-list-item">
+          <a href="https://paypal.me/nikolain" class="mdc-button mdc-button--unelevated paypal">
+            <span class="mdc-button__ripple"></span>
+            <span class="mdc-button__focus-ring"></span>
+            <span class="mdc-button__label">Pay <b class="amount hidden">$<span class="value"></span></b> with <b>PayPal</b></span>
+          </a>
+        </li>
+        <li class="mdc-deprecated-list-item">
+          <span class="mdc-deprecated-list-item__text">
+            Pay with <b>Zelle</b>: <span class="obfuscated">i<span>l</span>a.lokin@ellez</span>
+          </span>
+        </li>
+      </ul>
+      <script type="module" src="/src/main.ts"></script>
+    </div>
+</body>
+</html>

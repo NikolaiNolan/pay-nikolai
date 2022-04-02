@@ -1,0 +1,128 @@
+@use "@material/button";
+@use "@material/button/styles";
+@use "@material/layout-grid/mdc-layout-grid";
+@use "@material/list";
+@use "@material/typography/mdc-typography";
+@include list.deprecated-core-styles;
+
+@font-face {
+  font: {
+    family: 'Montserrat';
+    style: normal;
+    weight: 400;
+    display: fallback;
+  }
+
+  src: local('Montserrat Regular'),
+    local('Montserrat-Regular'),
+    url('/montserrat-400.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+    url('/montserrat-400.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+@font-face {
+  font: {
+    family: 'Montserrat';
+    style: normal;
+    weight: 700;
+    display: fallback;
+  }
+
+  src: local('Montserrat Bold'),
+    local('Montserrat-Bold'),
+    url('/montserrat-700.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+    url('/montserrat-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+html {
+  $font-stack-system: (
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    'Segoe UI',
+    'Roboto',
+    'Droid Sans',
+    'Helvetica Neue',
+  );
+
+  --blue: #008cd2;
+  --light-blue: #00aee4;
+  --red: #c20839;
+  --light-red: #eb1755;
+  --green: #00a532;
+  --light-green: #00c789;
+  --purple: #935782;
+  --light-purple: #b18fac;
+  --orange: #dd731d;
+  --light-orange: #fd8713;
+
+  --mdc-filled-button-container-height: 48px;
+  --mdc-shape-small: 0;
+  --mdc-theme-on-primary: white;
+  --mdc-theme-primary: var(--blue);
+  --mdc-theme-text-primary-on-background: white;
+  --mdc-typography-button-text-transform: none;
+  --mdc-typography-font-family: Montserrat, #{$font-stack-system}, sans-serif;
+  --mdc-typography-headline1-font-weight: 700;
+  --mdc-typography-headline1-letter-spacing: -.03em;
+}
+
+body {
+  margin: 0;
+  background-color: var(--green);
+  color: white;
+  text-align: center;
+}
+
+.mdc-layout-grid {
+  max-width: 480px;
+}
+
+.mdc-typography--headline1 {
+  display: block;
+  margin-top: -.075em;
+  margin-bottom: .075em;
+
+  sup {
+    margin-right: .1em;
+    font-size: .5em;
+  }
+}
+
+.hidden {
+  display: none;
+}
+
+:not(.mdc-deprecated-list-item--disabled).mdc-deprecated-list-item {
+  justify-content: center;
+  height: 72px;
+  cursor: auto;
+}
+
+.mdc-button {
+  width: 100%;
+  font-size: 1em;
+  letter-spacing: 0;
+}
+
+.cash-app {
+  @include button.container-fill-color(#00d64b);
+}
+
+.venmo {
+  @include button.container-fill-color(#3d95ce);
+}
+
+.paypal {
+  @include button.container-fill-color(#00457c);
+}
+
+.obfuscated {
+	text-align: left;
+	direction: rtl;
+	unicode-bidi: bidi-override;
+
+  span:first-child {
+    position: absolute;
+    top: -9999px;
+  }
+}

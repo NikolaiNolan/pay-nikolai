@@ -1,0 +1,16 @@
+image: node:10.15.3
+
+pipelines:
+  branches:
+    master:
+      - step:
+          caches:
+            - node
+            - firebase-hosting
+          script:
+            - yarn install
+            - yarn deploy
+
+definitions:
+  caches:
+    firebase-hosting: .firebase
