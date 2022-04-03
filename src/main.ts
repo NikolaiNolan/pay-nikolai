@@ -5,7 +5,7 @@ import './style.scss';
 
 let value = window.location.pathname.slice(1);
 
-if (value) {
+if (+value > 0) {
   value = (Math.round(+value * 100) / 100).toFixed(2).replace('.00', '');
 
   const paypalUrl = document.querySelector('.paypal')?.getAttribute('href');
