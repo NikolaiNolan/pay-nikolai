@@ -116,13 +116,6 @@ body {
   @include button.container-fill-color(#00457c);
 }
 
-.obfuscated {
-	text-align: left;
-	direction: rtl;
-	unicode-bidi: bidi-override;
-
-  span:first-child {
-    position: absolute;
-    top: -9999px;
-  }
+.zelle {
+  @include button.container-fill-color(#6d1fd4);
 }
