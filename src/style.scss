@@ -23,14 +23,27 @@
   font: {
     family: 'Montserrat';
     style: normal;
+    weight: 600;
+    display: fallback;
+  }
+
+  src: local('Montserrat SemiBold'),
+    local('Montserrat-SemiBold'),
+    url('~assets/fonts/montserrat-600.woff2') format('woff2'),
+    url('~assets/fonts/montserrat-600.woff') format('woff');
+}
+
+@font-face {
+  font: {
+    family: 'Galano Grotesque';
+    style: normal;
     weight: 700;
     display: fallback;
   }
 
-  src: local('Montserrat Bold'),
-    local('Montserrat-Bold'),
-    url('/montserrat-700.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-    url('/montserrat-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  src: local('Galano Grotesque Bold'),
+    local('GalanoGrotesque-Bold'),
+    url('galano-grotesque-700.woff2') format('woff2');
 }
 
 html {
@@ -81,6 +94,7 @@ body {
   display: block;
   margin-top: -.075em;
   margin-bottom: .075em;
+  font-family: 'Galano Grotesque', var(--mdc-typography-font-family);
 
   sup {
     margin-right: .1em;
@@ -102,6 +116,10 @@ body {
   width: 100%;
   font-size: 1em;
   letter-spacing: 0;
+}
+
+b {
+  font-weight: 600;
 }
 
 .cash-app {
