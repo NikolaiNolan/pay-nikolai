@@ -15,8 +15,7 @@
 
   src: local('Montserrat Regular'),
     local('Montserrat-Regular'),
-    url('/montserrat-400.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-    url('/montserrat-400.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+    url('/montserrat-400.woff2') format('woff2');
 }
 
 @font-face {
@@ -29,8 +28,7 @@
 
   src: local('Montserrat SemiBold'),
     local('Montserrat-SemiBold'),
-    url('~assets/fonts/montserrat-600.woff2') format('woff2'),
-    url('~assets/fonts/montserrat-600.woff') format('woff');
+    url('~assets/fonts/montserrat-600.woff2') format('woff2');
 }
 
 @font-face {
