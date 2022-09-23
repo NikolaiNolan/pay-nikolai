@@ -28,7 +28,7 @@
 
   src: local('Montserrat SemiBold'),
     local('Montserrat-SemiBold'),
-    url('~assets/fonts/montserrat-600.woff2') format('woff2');
+    url('/montserrat-600.woff2') format('woff2');
 }
 
 @font-face {
@@ -41,7 +41,7 @@
 
   src: local('Galano Grotesque Bold'),
     local('GalanoGrotesque-Bold'),
-    url('galano-grotesque-700.woff2') format('woff2');
+    url('/galano-grotesque-700.woff2') format('woff2');
 }
 
 html {
