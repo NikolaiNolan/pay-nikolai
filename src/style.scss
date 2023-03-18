@@ -7,28 +7,24 @@
 
 @font-face {
   font: {
-    family: 'Montserrat';
+    family: 'Galano Grotesque';
     style: normal;
     weight: 400;
     display: fallback;
   }
 
-  src: local('Montserrat Regular'),
-    local('Montserrat-Regular'),
-    url('/montserrat-400.woff2') format('woff2');
+  src: url('/galanogrotesque-regular-webfont.woff2') format('woff2');
 }
 
 @font-face {
   font: {
-    family: 'Montserrat';
+    family: 'Galano Grotesque';
     style: normal;
     weight: 600;
     display: fallback;
   }
 
-  src: local('Montserrat SemiBold'),
-    local('Montserrat-SemiBold'),
-    url('/montserrat-600.woff2') format('woff2');
+  src: url('/galanogrotesque-semibold-webfont.woff2') format('woff2');
 }
 
 @font-face {
@@ -39,9 +35,7 @@
     display: fallback;
   }
 
-  src: local('Galano Grotesque Bold'),
-    local('GalanoGrotesque-Bold'),
-    url('/galano-grotesque-700.woff2') format('woff2');
+  src: url('/galanogrotesque-bold-webfont.woff2') format('woff2');
 }
 
 html {
@@ -72,7 +66,7 @@ html {
   --mdc-theme-primary: var(--blue);
   --mdc-theme-text-primary-on-background: white;
   --mdc-typography-button-text-transform: none;
-  --mdc-typography-font-family: Montserrat, #{$font-stack-system}, sans-serif;
+  --mdc-typography-font-family: 'Galano Grotesque', #{$font-stack-system}, sans-serif;
   --mdc-typography-headline1-font-weight: 700;
   --mdc-typography-headline1-letter-spacing: -.03em;
 }
@@ -92,7 +86,6 @@ body {
   display: block;
   margin-top: -.075em;
   margin-bottom: .075em;
-  font-family: 'Galano Grotesque', var(--mdc-typography-font-family);
 
   sup {
     margin-right: .1em;
